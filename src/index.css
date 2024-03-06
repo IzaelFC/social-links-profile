@@ -21,7 +21,7 @@ body {
 }
 
 main {
-  @apply flex flex-col gap-5 sm:w-[70vh] sm:h-[90vh] bg-[--dark-grey] m-auto sm:p-10 p-7 rounded-xl
+  @apply flex flex-col gap-5 bg-[--dark-grey] m-auto sm:p-10 p-7 rounded-xl
 }
 
 .infos {
