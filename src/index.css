@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary */
+  --green: hsl(75, 94%, 57%);
+
+  /* Neutral */
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  @apply w-screen h-screen flex bg-[--off-black] items-center justify-center
+}
+
+main {
+  @apply flex flex-col gap-5 sm:w-[70vh] sm:h-[90vh] bg-[--dark-grey] m-auto sm:p-10 p-7 rounded-xl
+}
+
+.infos {
+  @apply flex flex-col
+}
+
+.infos img {
+  @apply w-20 mx-auto rounded-full
+}
+
+.infos h1 {
+  @apply text-center text-2xl text-white font-bold
+}
+
+.infos span {
+  @apply text-center text-sm text-[--green]
+}
+
+.infos p {
+  @apply text-center text-sm text-white mt-5
+}
+
+.social {
+  @apply flex flex-col gap-2
+}
+
+.social a {
+  @apply hover:bg-[--green] bg-[--grey] hover:text-[--off-black] text-white text-center text-sm font-bold p-3 rounded transition-all
+}
